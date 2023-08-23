@@ -1,5 +1,7 @@
 package day04;
 
+import java.util.Scanner;
+
 public class LoopQuiz {
 
 	public static void main(String[] args) {
@@ -36,6 +38,58 @@ public class LoopQuiz {
 			}
 		}
 			
+		
+		// 2번 풀이
+		System.out.println("===== 거꾸로 출력하기 =====");
+		Scanner scan = new Scanner(System.in);
+		String str = scan.nextLine(); // HELLO
+		
+		//String reverse = ""; 
+		
+		for(int i = str.length(); i>0; i--) {
+			//reverse +=str.charAt(i-1);
+			System.out.println(str.charAt(i-1));
+		} 
+		//System.out.println("거꾸로 문자열 :" +reverse);
+		scan.close();
+		// 이렇게 하면 역순으로 출력됨
+		
+		
+//		for(int i =0; i < str.length(); i++) {
+//			System.out.println(str.charAt(i));
+//			
+//		}
+		
+		
+		//3번 풀이
+		System.out.println("===== 로또 번호 추출 =====");
+		int[] lotto2 = {0,0,0,0,0,0};
+		
+		int index = 0;
+		while(true){ // 무한한 반복을 위해 true값 설정
+			//랜덤값 생성
+			int rand = (int)(Math.random()*45) + 1;  // 1부터 45까지 수 발생 시키기
+			int i = 0; // 시작값 밖으로 뺀다 - 인덱스와 비교하기 위해서 밖으로 뺐음.
+			for( i = 0; i<index; i++) {
+				if(rand == lotto2[i]) { // 추첨된 번호가 중복됨
+					break; // for에서 걸리는 break 
+				}
+			}
+			if(index == i) { //만약 인덱스와 i가 같아진다면  - 추첨된 번호에 있지 않음
+				lotto2[index++] = rand; // 인덱스는 들어가있는 숫자 순번 먹이기 위해 사용
+			}
+			if(index > 5) // 생성된 값의 개수가 0-5보다 작은가?에 대한 체크 - 6개 추첨 끝
+				break;
+		}
+		// 결과 출력
+		for(int i = 0; i<lotto2.length; i++) {
+			System.out.println(lotto2[i]+ "\t");
+		}
+		
+		
+			
+		
+		
 
 		
 		// 3번
@@ -50,9 +104,7 @@ public class LoopQuiz {
 		 *  print() : 전달된 값을 출력
 		 *  printf() : 문자열의 포맷문자를 이용하여 결과를 출력
 		 *  println() : 문자열 값에 마지막에 \n 추가됨. 즉, 줄바꿈 처리함.
-		 */
-		
-		// 2번 
+		 */		
 		
 		
 		// 3번  웹서칭
@@ -79,37 +131,7 @@ public class LoopQuiz {
 	
 		
 		
-		
-		
-		System.out.println();
-
-		float f = 1.1F;
-		double d = 1.1;
-		System.out.printf("%f, %f", f, d); //%f = 실수형 표현
-
-		System.out.println();
-		
-		//
-		boolean one = false; //true or false
-		//boolean two = False; //대소문자를 구분하기 때문에 F는 X
-		//boolean three = "false";//문자도 X
-		//boolean four = 1; // 1 = true
-		System.out.println(one);
-		
-		
-		System.out.println();
-		
-		
-		for(int i = 0; i < 3; i++){
-			for(int j = 0; j < i; j++){
-				System.out.print(i + " " + j + ", ");
-			}
-		}
-		
-		
-		 
-
-		
+	
 		
 	}
 
