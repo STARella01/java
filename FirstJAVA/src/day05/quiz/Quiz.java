@@ -39,39 +39,36 @@ public class Quiz {
 		// 커피의 개수를 입력받고, 총 가격이 얼마인지 계산하여 출력하는
 		// 프로그램을 만들어보세요.
 		
-		// 2번 풀이
-		System.out.println("커피값 계산 프로그램");
-		System.out.println(" > ");
-		//Scanner scan = new Scanner(System.in); // 상단에 스캐너 있으니까 주석처리
-		
-		int qty = scan.nextInt(); // 커피는 몇 잔?
-		int price = 0; // 커피가격
-		int normal_price = 2000;
-		int discount_price = 1500;
-		
-		
-		// if case를 사용함
-//		if(qty > 10) {
-//			price += (10 * normal_price ) + (qty -10) *  discount_price;
-//		}else {
-//			price += qty * normal_price;
-//		}
-		System.out.println("커피 가격 : "+price+"입니다.");
-		
-		//switch case를 사용함
-		swtich (qty  / 10) {
-			case 0: 	//10잔 미만
-				price += qty * normal_price;
-				break;
-			default: // 10잔 이상
-				price += (10 * normal_price ) + (qty -10) *  discount_price;
-				break;
-		};
-		
-		
-		
-		
-		
+		// 2. 커피의 가격은 2000원, 10개 이상 구매하면 초과분에 대해서 
+				//   커피는 1500원을 받는다. 
+				//   커피의 개수를 입력받고, 총 가격이 얼만인지 계산하여 출력하는 
+				//   프로그램을 만들어보세요!
+				System.out.println("커피 값 계산 프로그램");
+				System.out.print(">");
+//				Scanner scan = new Scanner(System.in);
+				int qty = scan.nextInt();  // 몇잔?
+				int price = 0;  //커피가격?
+				int normal_price = 2000;
+				int discount_price = 1500;
+
+				//if(qty > 10) {
+				//	price += (10 * normal_price ) + (qty -10) *  discount_price;
+				//}else {
+				//	price += qty * normal_price;
+				// }
+					
+				switch (qty  / 10) {
+					case 0 : 	//10잔 미만
+						price += qty * normal_price;
+						break;
+					default : // 10잔 이상
+						price += (10 * normal_price ) + (qty -10) *  discount_price;
+						break;
+				}
+				
+				System.out.println("커피 가격 : "+price+"입니다.");
+				
+				
 		
 		
 		// 내가 구현한 로직
