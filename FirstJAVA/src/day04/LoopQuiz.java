@@ -24,7 +24,7 @@ public class LoopQuiz {
 		
 		
 		// 1번 풀이
-		System.out.println("===== Prime Numeber =====");
+		System.out.println("===== Prime Number =====");
 		int cnt;
 		for (int i = 2; i <=100; i++ ){
 			cnt = 0; // 배수 여부를 확인
@@ -85,12 +85,6 @@ public class LoopQuiz {
 		for(int i = 0; i<lotto2.length; i++) {
 			System.out.println(lotto2[i]+ "\t");
 		}
-		
-		
-			
-		
-		
-
 		
 		// 3번
 //		int lotto = (int)(Math.random() * 45);
