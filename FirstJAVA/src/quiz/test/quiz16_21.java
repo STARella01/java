@@ -11,6 +11,7 @@ public class quiz16_21 {
 //		3. “그만” 을 입력 받으면 탈출 합니다.
 //		4. For문을 통해 배열에 저장되어 있는 음식을 모두 출력 하세요.
 		Scanner scan = new Scanner(System.in);
+		
 		// 
 		while(true) { 
 			System.out.println("----- 먹고싶은 음식을 입력하세요!! -----");
