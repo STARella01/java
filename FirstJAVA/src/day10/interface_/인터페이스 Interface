@@ -17,7 +17,7 @@
 			public abstract void breathUnderWater();			// abstract 생략도 가능
 		}
 	
-		- 인터페이스는 골격만 정의해 놓은 것으로 주로 기능(메서드)의 명세를 정의
+		- 인터페이스는 골격만 정의해 놓은 것으로 주로 기능(메서드)의 명세를 정의 - ~~이런 거 해줘!라고 하는 요구 명세서
 		- 인터페이스 내에 메서드는 모두 추상메서드이며 public abstract는 생략가능함.
 		- 인터페이스 내에 변수는 항상 public static final이며, 이 또한 생략이 가능하다. (인터페이스는 상수입니다.)
 		- 인터페이스는 구현하면 다중 상속과 같은 효과를 낼 수 있음. (상속을 여러 개 받으면 어느 부모의 멤버를
@@ -31,11 +31,11 @@
 		
 		Ex)) 클래스에 인터페이스 구현
 		public class Mermaid extends Human implements Aquatic{
-			public void swimming(){
+			public void swimming(){  // abstract 생략된 형태
 				// 인어가 수영하는 기능 구현
 			}
 			
-			public void breathUnderWater(){
+			public void breathUnderWater(){ // abstract 생략된 형태
 				// 물 속에서 숨쉬는 기능 구현
 			}
 		}

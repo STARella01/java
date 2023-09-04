@@ -17,8 +17,4 @@ public class Student extends Person {
 	// - 리턴타입, 메서드이름,파라미터 변수 선언이 일치해야 함. -> 이것이 다르면 그냥 메서드를 정의한 것이 된다.
 	// - 접근제한자는 같거나, more public해야 함.   ex) default->public이나 protected에 가까워야 함.
 	
-	
-	
-	
-	
 }

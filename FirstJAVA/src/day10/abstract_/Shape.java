@@ -1,6 +1,6 @@
 package day10.abstract_;
 
-public abstract class Shape { // 추상 클래스
+public abstract class Shape { // 추상 클래스 - 부모로써 다형성 표현에 사용
 	// 
 	private int x;
 	private int y;
@@ -22,7 +22,4 @@ public abstract class Shape { // 추상 클래스
 	}
 	
 	// 원형 도형
-	
-	
-	
 }

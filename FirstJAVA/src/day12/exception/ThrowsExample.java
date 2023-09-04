@@ -4,7 +4,7 @@ public class ThrowsExample {
 	
 	private static String[] greetStrings = {"안녕", "Hi" ,"니하오"};
 	
-	public static void doIt( int index) throws ArrayIndexOutOfBoundsException{
+	public static void doIt( int index ) throws ArrayIndexOutOfBoundsException{
 		System.out.println(greetStrings[index]);
 	}
 

@@ -15,7 +15,8 @@ package day08.inheritance;
 //              String name,
 //              int size;
 //          } 일 경우, NameCard has a name
-// - Object 클래스를 최상위 클래스
+
+// - Object 클래스를 최상위 클래스 
 // - final 클래스는 상속 불가... 
 // - abstract 클래스는 반드시 상속해서 사용해야 함. 
 
@@ -23,7 +24,7 @@ package day08.inheritance;
 //   bad case
 //  - 개별 클래스들이 중복된 속성/기능을 포함하는 경우
 
-//   good case
+//   good case 
 //  - 중복된 기능을 빼내 새로운 클래스로 작성한 후 구체화 시킴
 //  - 일반화 된 클래스는 부모 클래스
 //  - 구체화 된 클래스는 자식 클래스 

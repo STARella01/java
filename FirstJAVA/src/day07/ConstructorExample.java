@@ -60,9 +60,8 @@ public class ConstructorExample {
 		// 
 		
 		//Overload
-		Car(String wheel, int numOfWheel, String brand, String name){ // 생성자
+		Car(String wheel, int numOfWheel, String brand, String name){ // 생성자 / 필드 생성자
 			// this : 현재 인스턴스를 의미함.
-			//
 			
 			// 클래스 변수와 매개변수를 같은 이름으로 사용할 때,
 			// 클래스 변수를 지칭하기 위해서 "this" 붙여야 한다.
@@ -72,6 +71,8 @@ public class ConstructorExample {
 			 this.brand = brand;
 			 this.name = name; // 
 			 // this 지금 현재 객체
+			 
+			 // this.() // 이거는 생성자를 의미한다
 			
 		}
 		

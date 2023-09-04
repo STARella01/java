@@ -49,7 +49,7 @@ public class RuntimeExceptionExample {
 	// 클래스 캐스팅(형변환) 예외
 	public static void makeException8() { // java.lang.ClassCastException:
 		Object[] objArr = new String[3];
-		objArr[0] = "0";
+		objArr[0] = "0"; // 0x30 아스키 코드
 		Integer a = (Integer) objArr[0]; // ( ) ->이거는 형변환 입력
 		// 문자와 숫자는 관계가 없기 때문에 바꿀 수 없어서 예외처리됨
 	}
@@ -70,17 +70,15 @@ public class RuntimeExceptionExample {
 		catch (Exception e){
 			System.out.println(e.getMessage());
 		}
-		// makeException1(5);
-		//makeException2();
-		//makeException3();
-		// makeException4();
-		// makeException5();
-		// makeException6();
-		// makeException7();
-		// makeException8();
+		//	makeException1(5);
+		//	makeException2();
+		//	makeException3();
+		//	makeException4();
+		//	makeException5();
+		//	makeException6();
+		//	makeException7();
+		//	makeException8();
 	}
-	
-	
 	
 
 }
