@@ -6,7 +6,7 @@ public class StringBuilderExample {
 		// StringBuilder
 		String str = "Hello, world! 1234567890";
 		StringBuilder sb = new StringBuilder(str);
-		System.out.println("String builder에 있는 문자열 :"+str);
+		System.out.println("StringBuilder에 있는 문자열 :"+str);
 			
 		// 1. append
 		sb.append(10);
