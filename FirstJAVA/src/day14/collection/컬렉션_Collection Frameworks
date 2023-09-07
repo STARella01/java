@@ -38,12 +38,13 @@
 	 	[ Collection Interface의 주요 Method ]
 	 	
 	 	리턴 타입   	메서드
-	 	boolean		add(E e)				E는 기본, 객체의 자료형을 / e는 객체 변수명, 컬렉션에 엘리먼트를 추가 - 추가 true , 안되면 false
+	 	boolean		add(E e)				E는 기본 객체의 자료형을 / e는 객체 변수명, 
+	 											컬렉션에 엘리먼트를 추가 - 추가 true , 안되면 false
 	 	void			clear()					컬렉션의 모든 엘리먼트를 삭제
 	 	boolean		contains(Object o)	컬렉션이 주어진 객체를 포함하면 true를 리턴
 	 	boolean		isEmpty()				컬렉션이 비어 있으면 true를 리턴
 	 	Iterater<E>	interator()			이 컬렉션의 interator 객체를 반환
-	 	boolean		remove(Object 0)	주어진 엘리먼트 객체를 제거
+	 	boolean		remove(Object o)	주어진 엘리먼트 객체를 제거
 	 	int				size					컬렉션의 엘리먼트 개수를 반환
 	 	Object[]		toArray()				이 컬렉션의 모든 엘리먼트들을 배열로 반환
 	 	<T> t[]		toArray(T[]	a)		이 컬렉션의 모든 엘리먼트들을 주어진 타입의 배열로 반환
@@ -89,7 +90,7 @@
 	 	int					search(Object o)	스택에서 전달된 객체가 존재하는지 확인하고, 인덱스를 반환
 													인덱스는 제일 상단위치에서 1부터 시작하여 반환됩니다.
 													
-	 	Queue
+	 	[ Queue ] 
 	 	
 	 	- Queue는 스택과 다르게 인터페이스 형태로만 구현되어 있음.
 	 	때문에 Queue는 직간접적으로 구현한 클래스가 상당히 많음. 그 중에 linked list 클래스가 있다.
