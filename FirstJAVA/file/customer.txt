@@ -1,0 +1,2 @@
+홍길동,M,hgd@gmail.com,30
+차은우,F,hgd2@gmail.com,25
