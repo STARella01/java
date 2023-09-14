@@ -17,13 +17,13 @@ public class Rectangle extends Shape {
 	
 	
 	@Override
-	double area() {
+	public double area() {
 		// TODO Auto-generated method stub
 		return (w * h);
 	}
 
 	@Override
-	double length() {
+	public double length() {
 		// TODO Auto-generated method stub
 		return  (w + h)*2;
 	}

@@ -10,18 +10,18 @@ public class Circle extends Shape {
 		this(1); // 이거 뭐임?
 	}
 	
-	Circle(double r) {
+	public Circle(double r) {
 		this.r = r;
 	}
 
 	@Override
-	double area() {
+	public double area() {
 		// TODO Auto-generated method stub
 		return (r*r)*Math.PI;
 	}
 
 	@Override
-	double length() {
+	public double length() {
 		// TODO Auto-generated method stub
 		return (r*2)*Math.PI;
 	}
