@@ -45,19 +45,19 @@ public class LambdaEx9 {
 		
 		// 최대 영어 점수 
 				System.out.println("최대 수학 점수 :");
-				int max = maxOrMinEng ((a , b) ->{
+				int max1 = maxOrMinEng ((a , b) ->{
 					if(a >= b) {
 						return a;
 					}else {
 						return b;
 					}
 				});
-				System.out.println(max);
+				System.out.println(max1);
 				
 			// 최소 영어 점수
 			System.out.println("최소 수학 점수 :");
 			// 삼항 연산식 
-			int min = maxOrMinEng ( (a , b) -> (a <= b) ? a : b );
+			int min1 = maxOrMinEng ( (a , b) -> (a <= b) ? a : b );
 			
 //				int min = maxOrMinMath ((a , b) ->{
 //					if(a <= b) {
@@ -66,7 +66,7 @@ public class LambdaEx9 {
 //						return b;
 //					}
 //				});
-			System.out.println(min);		
+			System.out.println(min1);		
 		
 				
 				
