@@ -10,7 +10,7 @@ public class UDPServer {
 		//  UDP Server ... DatagreamSocket DatagramPacket
 
 		try {
-			DatagramSocket socket = new DatagramSocket(9500); // 수신
+			DatagramSocket socket = new DatagramSocket(1235); // 수신
 			DatagramPacket inPacket;		// 보낼 데이터		
 			byte[] inMsg = null;
 			

@@ -18,7 +18,7 @@ public class ServerEx {
 		ServerSocket server = null;
 		
 		try {
-			server = new ServerSocket(9997);
+			server = new ServerSocket(1235);
 			
 			// 무한 반복 처리 - 응답이 언제 올지 모르니 클라이언트 접속 대기
 			while(true) {
