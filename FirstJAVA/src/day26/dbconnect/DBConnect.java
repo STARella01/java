@@ -63,7 +63,7 @@ public class DBConnect {
 			catch (Exception e) { }
 		}
 		
-	} // 메인 메서드 
+	} // 메인 메서드  
 	
 	
 	

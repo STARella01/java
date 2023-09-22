@@ -6,6 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
+// 설치파일 url 
+// 1 
+// https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.42.0.0
+
+
 public class DBConnect {
 
 	public static void main(String[] args) {
@@ -43,7 +49,7 @@ public class DBConnect {
 			System.out.println("드라이브 로드 실패");
 		} catch (SQLException e) {
 			System.out.println("DB 연동 실패");
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage( ));
 		}
 
 	}

@@ -1,0 +1,40 @@
+1. DB에 다음의 정보를 가지는 테이블을 생성(Persons)
+  int ID(기본키-자동증가), String LastName(Not Null), String FirstName, 
+  int Age(18세 이상 가입), String City(기본값 :서울)
+
+2. PersonsVO 객체 생성(테이블에 있는 정보를 이용한 객체)
+ toString 메서드로 멤버의 내용을 출력 가능하게 Override처리
+
+3. PersonsDAO를 생성하여 Insert, Select, Update, Delete 구현
+  메인에서 요구하는 내용을 토대로 작성하세요. 
+
+4. 메인에서는 다음의 메뉴로 동작하는 프로그램을 작성
+	/*
+	 * [PersonsDB 처리하는 프로그램]
+	 *  1. 전체조회( 레코드 전체 정보를 출력 )
+	 *  2. 선택조회( 회원 ID들 이용한 정보 조회 )
+	 *  3. 레코드 추가(PersonsDB에 레코드 정보를 입력 받아서 추가)
+	 *  4. 레코드 수정(ID를 입력받아서 해당 레코드를 수정)
+	 *     (** 수정시에 ID에 해당하는 정보를 사전출력하여 변경 합니다.)
+	 *     ex) 변경할 ID[10] 입력하세요 :
+	 *         변경할 성[홍]을 입력하세요 :  ... 
+	 *  5. 레코드 삭제(ID를 입력받아서 해당 레코드를 삭제)
+	 *  메뉴 선택 :
+	 *  
+	 *  각 기능은 메서드로 구성하여 만들어주세요 ~~~ 
+	 */
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	I will never know cause you will never show.
+	Come on and love me now
+	Come on and love me now
+	Come on I'm lonely now..	

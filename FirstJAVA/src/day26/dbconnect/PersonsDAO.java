@@ -69,7 +69,7 @@ public class PersonsDAO {
 			System.out.println(e.getMessage());
 		} finally {
 			try {
-				if(conn!=null) conn.close();
+				// if(conn!=null) conn.close();
 				if(stmt!=null) stmt.close();
 			} catch (Exception e2) { }
 		}
@@ -142,7 +142,25 @@ public class PersonsDAO {
 	// 수정 메서드 구현
 	public int UpdatePersons(PersonsVO vo) {
 		int result = 0;
-		// 숙제
+		
+		String sql = "update Persons set lastName firstName age city";
+		
+//		+ "values('"+vo.getLastName()+"','"+vo.getFirstName()+"',"+
+//		vo.getAge()+",'"+vo.getCity()+"')";
+		
+		try {
+			stmt = conn.createStatement();	
+			result = stmt.executeUpdate(sql);
+			
+		} catch (SQLException sqle) {
+			System.out.println("SQL 연동 실패");
+			System.out.println(sqle.getMessage());
+		} finally {
+			try {
+				if (stmt != null) stmt.close();
+			} catch (Exception e) { }
+		}
+		
 		return result;
 	}
 
@@ -150,7 +168,22 @@ public class PersonsDAO {
 	// 삭제 메서드 구현
 	public int deletePersons(int id) {
 		int result = 0;
-		// 숙제
+
+		String sql = "delete from Persons where id ="+id;
+		
+		try {
+			stmt = conn.createStatement();	
+			result = stmt.executeUpdate(sql);
+			
+		} catch (SQLException sqle) {
+			System.out.println("SQL 연동 실패");
+			System.out.println(sqle.getMessage());
+		} finally {
+			try {
+				if (stmt != null) stmt.close();
+			} catch (Exception e) { }
+		}
+		
 		return result;
 	}
 

@@ -14,7 +14,7 @@ public class PersonsVO {
 	private String city;
 	
 	// 기본 생성자
-	public PersonsVO() {}
+	public PersonsVO( ) { }
 
 	// 필드 생성자
 	public PersonsVO(int id, String firstName, String lastName, int age, String city) {
