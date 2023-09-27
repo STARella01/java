@@ -29,7 +29,7 @@ public class DBConnectTest {
 			System.out.println("DB연동 성공");
 			
 			// 3. SQL 작성
-			String sql = "insert into (id , lastname, firstname, age, city) values ( ? , ? , ? , ? , ? )";
+			String sql = "insert into ( id , lastname, firstname, age, city) values ( ? , ? , ? , ? , ? )";
 			
 			// 4. PreparedStatement 객체 생성
 			pstmt2 = conn2.prepareStatement(sql);
